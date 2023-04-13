@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --primaryColor:#101820;
+    --secondaryColor:#009bf9;
+    --textColor:#f2faff;
+    --gray:rgba(42, 53, 62, 0.4);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none!important;
+    border: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+    background-color: var(--primaryColor);
+    color: var(--textColor);
+}
+
+.logo{
+    height: 75px;
+}
+
+#mainNavbar{
+    background-color: var(--primaryColor)!important;
+    border-bottom: 1px solid var(--gray);
+}
+
+#mainNavbar .nav-item .nav-link{
+    position: relative;
+    color: var(--textColor);
+}
+
+#mainNavbar .nav-item .nav-link::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: var(--secondaryColor);
+    bottom: -3px;
+    left: 0;
+    transition: ease .40s;
+}
+
+#mainNavbar .nav-item:not(:last-child) .nav-link:hover::after{
+    width: 100%;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.contactBtn{
+    padding-top: 1px;
+    padding-right: 10px;
+    padding-bottom: 1px;
+    padding-left: 10px;
+    background-color: var(--secondaryColor);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.btn-primary{
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+section{
+    padding: 5rem 0;
+}
+
+.section-title{
+    padding-bottom: 4rem;
+    position: relative;
+}
+
+.sub-title{
+    color: var(--secondaryColor);
+    font-size: 11px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Hero Section */
+/* #hero{
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+} */
+
+#hero .social a{
+    transition: all .4s;
+}
+
+#hero .social a:hover{
+    color: var(--textColor);
+    transform: scale(1.2);
+}
+
+#hero h1 .typer{
+    color: var(--secondaryColor);
+}
+
+/* About Section */
+.exp{
+    background-color: var(--gray);
+    border-radius: 7px;
+    box-shadow: 0px 30px 45px rgba(22, 22, 22, 0.15);
+}
+
+.exp-number{
+    margin-top: 20px;
+}
