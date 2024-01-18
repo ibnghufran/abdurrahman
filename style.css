@@ -103,6 +103,14 @@ body{
     padding-left: 18px;
 }
 
+.portfolio-section .row{
+    margin-top: 50px;
+}
+
+.portfolio-box{
+    margin: 2%;
+}
+
 section{
     padding: 5rem 0;
 }

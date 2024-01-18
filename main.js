@@ -1,7 +1,7 @@
 
 // Typer for Skills
 var typed = new Typed('.typer', {
-    strings: ['an Influencer.', 'a YouTuber.', 'a Designer.', 'an Animator.', 'a Developer.', 'Digital Marketer', 'Digital Creator'],
+    strings: ['a Video Editor.', 'Digital Creator', 'an Influencer.', 'a YouTuber.', 'a Designer.', 'a Video Editor.', 'an Animator.', 'a Developer.', 'Digital Marketer', 'a Video Editor.'],
     typeSpeed: 100,
     backSpeed: 100,
     loop: true
