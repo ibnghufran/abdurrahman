@@ -78,6 +78,31 @@ body{
     padding-left: 20px;
 }
 
+.containerContact{
+    border-radius: 0;
+}
+
+.containerContact .row{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.containerContact .col-md-7{
+    padding: 20px;
+}
+
+.containerContact .col-md-5{
+    padding: 20px;
+}
+
+.containerContact .bi{
+    font-size: 20px;
+}
+
+.containerContact .d-flex p{
+    font-size: 1rem;
+    padding-left: 18px;
+}
+
 section{
     padding: 5rem 0;
 }
