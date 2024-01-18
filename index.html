@@ -116,7 +116,7 @@
                             Diploma in Computer Engineering.
                         </p>
                         <a href="#contact" target="_blank" class="btn btn-primary me-2">Contact</a>
-                        <a href="#about" target="_blank" class="btn btn-primary px-4"><i
+                        <a href="#" target="_blank" class="btn btn-primary px-4"><i
                                 class="bi bi-arrow-down-circle me-2"></i>CV</a>
                     </div>
                 </div>
@@ -299,26 +299,33 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-7">
-                        <h4>Get in Touch!</h4>
-                        <hr>
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter Your Name">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Email ID</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter Your Email ID">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Contact Number</label>
-                            <input type="number" class="form-control" id="contactNumber"
-                                placeholder="Enter Your Contact Number">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label">Messages</label>
-                            <textarea class="form-control" id="messages" rows="3"></textarea>
-                        </div>
-                        <button class="btn btn-primary">Send</button>
+                        <form method="post" action="https://script.google.com/macros/s/AKfycbwpkZ1kIGeYsD9v5GjQXz1vmYBh633FR3XlZCg2nUPbGOFTf7qyUVNWyO2CLyoXa2OCQg/exec" name="contact-form">
+                            <h4>Get in Touch!</h4>
+                            <hr>
+                            <div class="mb-3">
+                                <label for="contact-form" class="form-label">Name</label>
+                                <input type="text" class="form-control" name="your-name" id="name" placeholder="Enter Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contact-form" class="form-label">Email ID</label>
+                                <input type="email" class="form-control" name="your-email-id" id="email" placeholder="Enter Your Email ID" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contact-form" class="form-label">Contact Number</label>
+                                <input type="number" class="form-control" name="your-contact-number" id="contact-number"
+                                    placeholder="Enter Your Contact Number" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contact-form" class="form-label">Contact Address</label>
+                                <input type="text" class="form-control" name="your-contact-address" id="contact-address"
+                                    placeholder="Enter Your Contact Address">
+                            </div>
+                            <div class="mb-3">
+                                <label for="contact-form" class="form-label">Messages</label>
+                                <textarea class="form-control" name="your-messages" id="messages" rows="5" placeholder="Your Messages" required></textarea>
+                            </div>
+                            <input class="btn btn-primary" type="submit" value="Submit" id="submit">
+                        </form>
                     </div>
                     <div class="col-md-5">
                         <h4>Contact Us!</h4>
@@ -391,6 +398,9 @@
 
 
     <!-- Footer Scripts -->
+
+    <!-- Google Sheet Script -->
+    <script src="GoogleSheet.js"></script>
 
     <!-- Google Tag Manager Verification Code -->
     <!-- Google Tag Manager (noscript) -->
