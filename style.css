@@ -2,9 +2,10 @@
 
 :root {
     --primaryColor:#101820;
-    --secondaryColor:#009bf9;
+    --secondaryColor:#F3AA60;
     --textColor:#f2faff;
     --gray:rgba(42, 53, 62, 0.4);
+    --buttonColor: #1D5B79;
 }
 
 *{
@@ -23,6 +24,10 @@ body{
     scroll-padding-top: 5.5rem;
     background-color: var(--primaryColor);
     color: var(--textColor);
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 .logo{
@@ -66,7 +71,7 @@ body{
     padding-right: 10px;
     padding-bottom: 1px;
     padding-left: 10px;
-    background-color: var(--secondaryColor);
+    background-color: var(--buttonColor);
     text-align: center;
     border-radius: 5px;
 }
@@ -137,13 +142,20 @@ section{
     background-size: cover;
 } */
 
+.btn {
+    background-color: var(--buttonColor);
+}
 #hero .social a{
     transition: all .4s;
 }
 
 #hero .social a:hover{
-    color: var(--textColor);
+    color: var(--buttonColor);
     transform: scale(1.2);
+}
+
+#hero .social a{
+    color: var(--secondaryColor);
 }
 
 #hero h1 .typer{
@@ -159,4 +171,30 @@ section{
 
 .exp-number{
     margin-top: 20px;
+}
+
+
+#progress{
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 70px;
+    width: 70px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+#progress-value{
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+    color: #001a2e;
 }
